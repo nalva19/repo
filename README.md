@@ -1,7 +1,9 @@
 Proyecto
 Mostraremos benefcios de los planes y los costos 
-```json
-{
+```markdown
+pip install requests beautifulsoup4 pandas
+```bash
+```python
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -64,5 +66,4 @@ if response.status_code == 200:
     print("Datos guardados en 'ofertas_entel_mejorado.csv'")
 else:
     print(f"Error al acceder a la página. Código de estado: {response.status_code}")
-}
 ```
